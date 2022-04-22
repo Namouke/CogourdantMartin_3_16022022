@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="sass/style.scss">
+    <script src="https://kit.fontawesome.com/5f4d93579f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap"
@@ -19,30 +20,31 @@
 
     <header>
 
-        <div>
-            <img src="Maquettes Ohmyfood/images/logo/ohmyfood.png" alt="">
+        <div class="logoHeader">
+            <img class="tailleLogo" src="Maquettes Ohmyfood/images/logo/ohmyfood.png" alt="">
         </div>
 
     </header>
 
     <!-- SECTION PRESENTATION -->
 
-    <section>
+    <section class="presentation">
 
-        <div>
-            <p>Paris, Belleville</p>
+        <div class="titrePresentation">
+            <i class="fas fa-map-marker-alt"></i>
+            <p class="policePresentation , policeGrasPresentation">Paris, Belleville</p>
         </div>
 
-        <div>
-            <p>Réservez le menu qui vous convient</p>
+        <div class="contenuPresentation">
+            <p class="policePresentation , policeGrasPresentation">Réservez le menu qui vous convient</p>
         </div>
 
-        <div>
-            <p>Découvrez des restaurants d'exceptio, séléctionnés par nos soins.</p>
+        <div class="contenuPresentation">
+            <p class="policePresentation">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
         </div>
 
-        <div>
-            <p>Explorer nos restaurants</p>
+        <div class="contenuPresentation">
+            <p class="btn-presentation">Explorer nos restaurants</p>
         </div>
 
     </section>
@@ -72,14 +74,14 @@
 
     <!-- SECTION RESTAURANTS -->
 
-    <section>
+    <section class="restaurants">
 
         <div>
             <p>restaurant</p>
         </div>
 
-        <div>
-            <img
+        <div class="vignetteResto">
+            <img class="objectifFit"
                 src="Maquettes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
             <div>
                 <p>La palette du goût</p>
@@ -87,8 +89,8 @@
             </div>
         </div>
 
-        <div>
-            <img src="Maquettes Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+        <div class="vignetteResto">
+            <img class="objectifFit" src="Maquettes Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
                 alt="">
             <div>
                 <p>La note enchantée</p>
@@ -96,8 +98,8 @@
             </div>
         </div>
 
-        <div>
-            <img
+        <div class="vignetteResto">
+            <img class="objectifFit"
                 src="Maquettes Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">
             <div>
                 <p>A la française</p>
@@ -105,8 +107,8 @@
             </div>
         </div>
 
-        <div>
-            <img
+        <div class="vignetteResto">
+            <img class="objectifFit"
                 src="Maquettes Ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="">
             <div>
                 <p>Délice des sens</p>
@@ -120,19 +122,21 @@
 
     <footer class="footer">
 
-        <p>ohmyfood</p>
+        <p class="policeTitreLogo">ohmyfood</p>
 
-        <div>
-            <p>Proposer un restaurant</p>
+        <div class="iconFooter">
+            <div class="colorIconFooter"><i class="fas fa-utensils"></i></div>
+            <p class="policeTexte">Proposer un restaurant</p>
         </div>
 
-        <div>
-            <p>Devenir partenaire</p>
+        <div class="iconFooter">
+            <div class="colorIconFooter"><i class="fas fa-hands-helping"></i></div>
+            <p class="policeTexte">Devenir partenaire</p>
         </div>
 
-        <p>Mention légales</p>
+        <p class="policeTexte">Mention légales</p>
 
-        <p>Contact</p>
+        <a class="colorContactNone" href="htmlContact.html"><p class="policeTexte">Contact</p></a>
 
     </footer>
 

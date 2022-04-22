@@ -1,6 +1,155 @@
+.logoHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 60px;
+  margin-top: 30px;
+}
+
+.tailleLogo {
+  max-width: -moz-available;
+}
+
+.policePresentation {
+  font-family: "Roboto", sans-serif;
+}
+
+.policeGrasPresentation {
+  font-weight: bold;
+}
+
+.presentation {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.titrePresentation {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  background-color: #dddfdc;
+  width: 100%;
+}
+
+.contenuPresentation {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #f6f6f6;
+}
+
+.btn-presentation {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  background-color: #9356DC;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+}
+
+.restaurants {
+  background-color: #f6f6f6;
+}
+
+.objectifFit {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.vignetteResto {
+  display: flex;
+  width: 100%;
+  max-height: 300px;
+  flex-direction: column;
+}
+
 .footer {
   background-color: #373438;
   padding: 20px;
+}
+
+.colorContactNone {
+  text-decoration: none;
+  color: white;
+}
+
+.policeTitreLogo {
+  font-family: "Shrikhand", cursive;
+  color: white;
+}
+
+.policeTexte {
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+.colorIconFooter {
+  color: white;
+  margin-right: 10px;
+}
+
+.iconFooter {
+  display: flex;
+  align-items: baseline;
+}
+
+.bodyContact {
+  font-family: "Roboto", sans-serif;
+}
+
+.colorBackWebSite {
+  text-decoration: none;
+  color: #9356DC;
+}
+
+.sectionContact {
+  height: 100vh;
+  max-width: 320px;
+  background-color: #99E2D0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenerContact {
+  width: 90%;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.062745098);
+  background-color: white;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: -moz-available;
+  padding: 10px;
+  font-size: 18px;
+  padding: 5px;
+  border: 1px solid #9356DC;
+}
+
+.logoContact {
+  font-family: "Shrikhand", cursive;
+  font-size: 35px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+html, body {
+  margin: auto;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,32 @@
+
+
+.footer {
+    background-color: $colorGrisFonce;
+    padding: 20px;
+}
+
+.colorContactNone{
+    text-decoration: none;
+    color: $colorBlanc;
+}
+
+.policeTitreLogo {
+    font-family: "Shrikhand", cursive;
+    color: $colorBlanc;
+}
+  
+.policeTexte {
+    font-family: "Roboto", sans-serif;
+    color: $colorBlanc;
+}
+
+.colorIconFooter {
+      color: $colorBlanc;
+      margin-right: 10px;
+}
+
+.iconFooter {
+    display: flex;
+    align-items: baseline;
+}
+

@@ -1,0 +1,49 @@
+// General Use 
+
+.policePresentation{
+    font-family: $policeTexte;
+}
+
+.policeGrasPresentation {
+    font-weight: $policeGras;
+}
+
+// Presentation 
+
+.presentation {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.titrePresentation {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    background-color: $colorGrisClaire;
+    width: 100%;
+}
+
+.contenuPresentation{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: $colorGrisTransparant;
+
+}
+
+// Bouton
+
+.btn-presentation {
+    font-family: $policeTexte;
+    font-weight: $policeGras;
+    font-size: 15px;
+    background-color: $colorPrimaire;
+    color: $colorBlanc;
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+
+
+
+
