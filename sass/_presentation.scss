@@ -1,12 +1,3 @@
-// General Use 
-
-.policePresentation{
-    font-family: $policeTexte;
-}
-
-.policeGrasPresentation {
-    font-weight: $policeGras;
-}
 
 // Presentation 
 
@@ -17,19 +8,31 @@
 }
 
 .titrePresentation {
-    display: flex;
-    align-items: baseline;
-    justify-content: center;
+    @include presentation;
+    border-top: solid 3px;
     background-color: $colorGrisClaire;
-    width: 100%;
+    font-family: $policeTexte;
+    font-weight: 400;
 }
 
-.contenuPresentation{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    background-color: $colorGrisTransparant;
+.marginLogoTitre {
+    margin-right: 15px;
+}
 
+.presentationLigne1 {
+    @include presentation;
+    font-family: $policeTexte;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    padding: 0 50px;
+}
+
+.presentationLigne2 {
+    @include presentation;
+    text-align: center;
+    font-family: $policeTexte;
+    font-weight: 100;
 }
 
 // Bouton

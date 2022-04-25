@@ -10,14 +10,6 @@
   max-width: -moz-available;
 }
 
-.policePresentation {
-  font-family: "Roboto", sans-serif;
-}
-
-.policeGrasPresentation {
-  font-weight: bold;
-}
-
 .presentation {
   display: flex;
   flex-direction: column;
@@ -28,15 +20,37 @@
   display: flex;
   align-items: baseline;
   justify-content: center;
+  max-width: 100%;
+  border-top: solid 3px;
   background-color: #dddfdc;
-  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
 }
 
-.contenuPresentation {
+.marginLogoTitre {
+  margin-right: 15px;
+}
+
+.presentationLigne1 {
   display: flex;
+  align-items: baseline;
   justify-content: center;
-  width: 100%;
-  background-color: #f6f6f6;
+  max-width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  padding: 0 50px;
+}
+
+.presentationLigne2 {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  max-width: 100%;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
 }
 
 .btn-presentation {

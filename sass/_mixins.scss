@@ -1,0 +1,8 @@
+
+@mixin presentation {
+
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    max-width: 100%;
+}
