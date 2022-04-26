@@ -1,4 +1,16 @@
 
+.header {
+    position: relative;
+}
+
+.iconArrowHeader {
+    position: absolute;
+    text-decoration: none;
+    color: rgb(61, 58, 58);
+    font-size: 25px;
+    left: 10px;
+}
+
 .logoHeader {
     display: flex;
     justify-content: center;

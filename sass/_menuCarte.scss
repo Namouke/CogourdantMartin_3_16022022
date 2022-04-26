@@ -1,0 +1,40 @@
+
+.menuCarte {
+    background-color: $colorGrisClaire;
+}
+
+.menuCarteTitle{
+    padding: 0 20px 0 20px;
+    font-family: $policeTexte;
+}
+
+.underline {
+    width: 40px;
+    border-top: 3px solid $colorTertiaire;
+    margin: 3px 0 3px 0;
+}
+
+.menuCarteContener{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px 0 20px;
+    padding: 5px;
+    background-color: white;
+    font-family: $policeTexte;
+    font-size: 14px;
+    border-radius: 10px;
+}
+
+.prixMenu{
+    align-self: flex-end;
+}
+
+.btn-oder-top{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-oderMenu {
+    @include btn-color;
+    @include shadow;
+}

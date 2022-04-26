@@ -2,150 +2,86 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/5f4d93579f.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap"
-        rel="stylesheet">
-    <title>ohmyfood</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/5f4d93579f.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Shrikhand&display=swap" rel="stylesheet"> 
+        <title>ohmyfood</title>
+    </head>
 </head>
 
 <body>
-    >
-    <header>
-        <div>
-            <p>flèche</p>
-        </div>
-        <img src="Maquettes Ohmyfood/images/logo/ohmyfood.png" alt="">
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <a class="iconArrowHeader" href="index.html">
+            <i class="fas fa-arrow-left"></i>
+        </a>
+        <div class="logoHeader">
+            <img class="tailleLogo" src="Maquettes Ohmyfood/images/logo/ohmyfood.png" alt=""> 
+        </div> 
+
     </header>
 
-    <section>
+    <!-- Menu titre -->
 
-        <!-- Image du restaurant -->
-
-        <div>
-            <img src="" alt="">
+    <div class="titleMenu">
+        <img class="imageMenu" src="/Maquettes Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">
+        <div class="titleMenuSmall">
+            <p class="policeTitleMenu margine-none padding-left20">À la française</p>
+            <div class="padding-right30">
+                <i class="far fa-heart"></i>
+            </div>
         </div>
+    </div>
 
-        <!-- Titre du restaurant -->
+    <!-- menu carte -->
 
-        <div>
-            <p>A la française</p>
-            <!-- <div> Bouton coeur à faire </div> -->
+    <div class="menuCarte">
+        <div class="menuCarteTitle">
+             <p class="margine-none">ENTRÉES</p>
+             <div class="underline"></div>
         </div>
-
-        <!-- Entrées -->
-
-        <div>
-
-            <!-- Titre de la div -->
-            <p>ENTREES</p>
-
-            <!-- Les choix possibles -->
+        <div class="menuCarteContener">
             <div>
-                <p>Tartare de poulpe acidulé</p> <!-- police gras -->
-                <p>Aux zests d'orange</p>
-                <p>25€</p> <!-- police gras -->
+                <p class="policeGras500 margine-none">Tartare de poulpe acidulé</p>
+                <p class="policeGras100 margine-none">Au zests d'orange</p>
             </div>
-
-            <div>
-                <p>Tartare de poulpe acidulé</p> <!-- police gras -->
-                <p>Aux zests d'orange</p>
-                <p>25€</p> <!-- police gras -->
-            </div>
-
-            <div>
-                <p>Tartare de poulpe acidulé</p> <!-- police gras -->
-                <p>Aux zests d'orange</p>
-                <p>25€</p> <!-- police gras -->
-            </div>
-
+            <div class="policeGras500 prixMenu">25€</div>
         </div>
-
-        <!-- Plats -->
-
-        <div>
-
-            <!-- Titre de la div -->
-            <p>ENTREES</p>
-
-            <!-- Les choix possibles -->
-            <div>
-                <p>Tartare de poulpe acidulé</p> <!-- police gras -->
-                <p>Aux zests d'orange</p>
-                <p>25€</p> <!-- police gras -->
-            </div>
-
-            <div>
-                <p>Tartare de poulpe acidulé</p> <!-- police gras -->
-                <p>Aux zests d'orange</p>
-                <p>25€</p> <!-- police gras -->
-            </div>
-
-            <div>
-                <p>Tartare de poulpe acidulé</p> <!-- police gras -->
-                <p>Aux zests d'orange</p>
-                <p>25€</p> <!-- police gras -->
-            </div>
-
+        <div class="btn-oder-top">
+            <p class="btn-oderMenu">Commander</p>
         </div>
-
-        <!-- Desserts -->
-
-        <div>
-
-            <!-- Titre de la div -->
-            <p>ENTREES</p>
-
-            <!-- Les choix possibles -->
-            <div>
-                <p>Tartare de poulpe acidulé</p> <!-- police gras -->
-                <p>Aux zests d'orange</p>
-                <p>25€</p> <!-- police gras -->
-            </div>
-
-            <div>
-                <p>Tartare de poulpe acidulé</p> <!-- police gras -->
-                <p>Aux zests d'orange</p>
-                <p>25€</p> <!-- police gras -->
-            </div>
-
-            <div>
-                <p>Tartare de poulpe acidulé</p> <!-- police gras -->
-                <p>Aux zests d'orange</p>
-                <p>25€</p> <!-- police gras -->
-            </div>
-
-        </div>
-
-    </section>
+    </div>
 
     <!-- FOOTER-->
 
-    <footer class="footer">
+<footer class="footer">
 
-        <p class="policeTitreLogo">ohmyfood</p>
+    <p class="policeTitreLogo">ohmyfood</p>
 
-        <div class="iconFooter">
-            <div class="colorIconFooter"><i class="fas fa-utensils"></i></div>
-            <p class="policeTexte">Proposer un restaurant</p>
-        </div>
+    <div class="iconFooter">
+        <div class="colorIconFooter"><i class="fas fa-utensils"></i></div>
+        <p class="policeTexte">Proposer un restaurant</p>
+    </div>
 
-        <div class="iconFooter">
-            <div class="colorIconFooter"><i class="fas fa-hands-helping"></i></div>
-            <p class="policeTexte">Devenir partenaire</p>
-        </div>
+    <div class="iconFooter">
+        <div class="colorIconFooter"><i class="fas fa-hands-helping"></i></div>
+        <p class="policeTexte">Devenir partenaire</p>
+    </div>
 
-        <p class="policeTexte">Mention légales</p>
+    <p class="policeTexte">Mention légales</p>
 
-        <a class="colorContactNone" href="htmlContact.html"><p class="policeTexte">Contact</p></a>
+    <a class="colorContactNone" href="Contact.html"><p class="policeTexte">Contact</p></a>
 
-    </footer>
-
+</footer>
 </body>
 
 </html>

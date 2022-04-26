@@ -42,13 +42,7 @@
 // Bouton
 
 .btn-presentation {
-    font-family: $policeTexte;
-    font-weight: $policeGras;
-    font-size: 15px;
-    background: linear-gradient(to bottom right, $colorSecondaire, $colorPrimaire);
-    color: $colorBlanc;
-    padding: 10px 20px;
-    border-radius: 25px;
+    @include btn-color;
     @include shadow;
 }
 

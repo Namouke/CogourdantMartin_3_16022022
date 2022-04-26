@@ -1,0 +1,34 @@
+
+.titleMenu {
+    margin-top: 20px;
+    max-width: 100%;
+    height: 300px;
+    position: relative
+}
+
+.imageMenu {
+    @include objectif-fit;
+    position: relative;
+}
+
+.titleMenuSmall {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $colorGrisClaire;
+    font-family: $policeTitreLogo;
+    font-size: 24px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 60px;
+    border-radius: 25px 25px 0 0;
+}
+
+.padding-left20 {
+    padding-left: 20px;
+}
+
+.padding-right30 {
+    padding-right: 30px;
+}

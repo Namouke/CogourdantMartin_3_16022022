@@ -10,3 +10,19 @@
 @mixin shadow {
     box-shadow: 2px 1px 8px -3px black;
 }
+
+@mixin objectif-fit {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@mixin btn-color {
+    font-family: $policeTexte;
+    font-weight: $policeGras;
+    font-size: 15px;
+    background: linear-gradient(to bottom right, $colorSecondaire, $colorPrimaire);
+    color: $colorBlanc;
+    padding: 10px 20px;
+    border-radius: 25px;
+}
