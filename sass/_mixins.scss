@@ -1,8 +1,12 @@
 
 @mixin presentation {
-
     display: flex;
     align-items: baseline;
     justify-content: center;
     max-width: 100%;
+    background-color: $colorGrisTransparant;
+}
+
+@mixin shadow {
+    box-shadow: 2px 1px 8px -3px black;
 }
