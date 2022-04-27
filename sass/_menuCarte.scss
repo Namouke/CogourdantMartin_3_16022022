@@ -11,22 +11,48 @@
 .underline {
     width: 40px;
     border-top: 3px solid $colorTertiaire;
-    margin: 3px 0 3px 0;
+    margin: 3px 0 15px 0;
 }
 
 .menuCarteContener{
     display: flex;
     justify-content: space-between;
-    margin: 0 20px 0 20px;
-    padding: 5px;
+    margin: 0 20px 10px 20px;
     background-color: white;
     font-family: $policeTexte;
     font-size: 14px;
     border-radius: 10px;
+    @include shadow;
+}
+
+.padding-05 {
+    padding: 5px;
 }
 
 .prixMenu{
     align-self: flex-end;
+}
+
+.btn-validation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $colorTertiaire;
+    min-height: 100%;
+    width: 35px;
+    border-radius: 0 10px 10px 0;
+}
+
+.logo-btn-validation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    color: $colorTertiaire;
+    background-color: $colorBlanc;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
 }
 
 .btn-oder-top{
