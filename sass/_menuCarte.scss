@@ -23,6 +23,9 @@
     font-size: 14px;
     border-radius: 10px;
     @include shadow;
+    &:hover{
+        cursor: pointer;
+    }
 }
 
 .padding-05 {

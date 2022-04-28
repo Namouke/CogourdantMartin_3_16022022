@@ -1,6 +1,13 @@
 
 // Presentation 
 
+.lignePresentation {
+    display: flex;
+    width: 100%;
+    min-height: 2px;
+    background-color: red
+}
+
 .presentation {
     display: flex;
     flex-direction: column;
@@ -9,7 +16,6 @@
 
 .titrePresentation {
     @include presentation;
-    border-top: solid 3px;
     background-color: $colorGrisClaire;
     font-family: $policeTexte;
     font-weight: 400;

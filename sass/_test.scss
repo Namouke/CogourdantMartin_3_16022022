@@ -1,0 +1,42 @@
+
+.marginboddy {
+    margin: 20px;
+    background-color: $colorGrisClaire;
+}
+
+.check {
+
+    background-color: white;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: solid 1px blue;
+
+        p {
+            margin: 0px;
+        }
+
+        .check_description {
+            border: solid 1px red;
+            display: flex;
+            justify-content: space-between;
+            min-width: 100%;
+        }
+
+        .check_text {
+            border: solid 1px red;
+        }
+    
+        .check_prix {
+            border: solid 1px red;
+            align-self: flex-end;
+        }
+
+        .check_btn {
+            border: solid 1px red;
+        }
+
+
+}
+
