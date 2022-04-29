@@ -12,6 +12,46 @@
     align-items: center;
     justify-content: space-between;
     border: solid 1px blue;
+    
+    &:hover {
+
+        cursor: pointer;
+
+        .check_btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: solid 1px red;
+            background-color: $colorTertiaire;
+            min-height: 100%;
+            width: 100%;
+            transform-origin: 50% 0%;
+            transition-duration: 1000ms;
+            
+        }
+
+        .check_btn_progress {
+            transform-origin: 50% 0%;
+            transform: scale(0);
+            transition: transform 1000ms;
+        }
+
+        .check_logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $colorTertiaire;
+            background-color: $colorBlanc;
+            border-radius: 50%;
+            height: 25px;
+            width: 25px;
+            visibility: visible;
+        }
+    }
+
+        .check_logo {
+            visibility: hidden;
+        }
 
         p {
             margin: 0px;
@@ -21,7 +61,7 @@
             border: solid 1px red;
             display: flex;
             justify-content: space-between;
-            min-width: 100%;
+            min-width: 85%;
         }
 
         .check_text {
@@ -33,9 +73,7 @@
             align-self: flex-end;
         }
 
-        .check_btn {
-            border: solid 1px red;
-        }
+        
 
 
 }

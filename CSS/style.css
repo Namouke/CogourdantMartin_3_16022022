@@ -11,6 +11,39 @@
   justify-content: space-between;
   border: solid 1px blue;
 }
+.check:hover {
+  cursor: pointer;
+}
+.check:hover .check_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px red;
+  background-color: #99E2D0;
+  min-height: 100%;
+  width: 100%;
+  transform-origin: 50% 0%;
+  transition-duration: 1000ms;
+}
+.check:hover .check_btn_progress {
+  transform-origin: 50% 0%;
+  transform: scale(0);
+  transition: transform 1000ms;
+}
+.check:hover .check_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #99E2D0;
+  background-color: white;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  visibility: visible;
+}
+.check .check_logo {
+  visibility: hidden;
+}
 .check p {
   margin: 0px;
 }
@@ -18,7 +51,7 @@
   border: solid 1px red;
   display: flex;
   justify-content: space-between;
-  min-width: 100%;
+  min-width: 85%;
 }
 .check .check_text {
   border: solid 1px red;
@@ -26,9 +59,6 @@
 .check .check_prix {
   border: solid 1px red;
   align-self: flex-end;
-}
-.check .check_btn {
-  border: solid 1px red;
 }
 
 .header {
