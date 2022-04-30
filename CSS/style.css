@@ -18,17 +18,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: solid 1px red;
   background-color: #99E2D0;
-  min-height: 100%;
-  width: 100%;
-  transform-origin: 50% 0%;
-  transition-duration: 1000ms;
-}
-.check:hover .check_btn_progress {
-  transform-origin: 50% 0%;
-  transform: scale(0);
-  transition: transform 1000ms;
 }
 .check:hover .check_logo {
   display: flex;
@@ -51,7 +41,7 @@
   border: solid 1px red;
   display: flex;
   justify-content: space-between;
-  min-width: 85%;
+  width: 100%;
 }
 .check .check_text {
   border: solid 1px red;
@@ -343,6 +333,11 @@
   border-radius: 25px 25px 0px 0px;
 }
 
+.textColorNone {
+  text-decoration: none;
+  color: black;
+}
+
 .vignetteResto {
   display: flex;
   width: 100%;
@@ -360,6 +355,31 @@
   align-items: baseline;
   justify-content: space-between;
   margin: 10px;
+}
+
+.love_heart {
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 30px;
+  width: 30px;
+}
+.love_heart .heart_one {
+  position: absolute;
+}
+.love_heart .heart_two {
+  visibility: hidden;
+}
+.love_heart:hover .heart_one {
+  visibility: hidden;
+}
+.love_heart:hover .heart_two {
+  visibility: initial;
+  color: #9356DC;
+  transition: all 550ms;
+  transform: scale(1);
 }
 
 .iconRestaurants {

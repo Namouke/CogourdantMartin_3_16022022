@@ -18,23 +18,13 @@
         cursor: pointer;
 
         .check_btn {
+            $width: 4rem;
             display: flex;
             align-items: center;
             justify-content: center;
-            border: solid 1px red;
             background-color: $colorTertiaire;
-            min-height: 100%;
-            width: 100%;
-            transform-origin: 50% 0%;
-            transition-duration: 1000ms;
-            
         }
 
-        .check_btn_progress {
-            transform-origin: 50% 0%;
-            transform: scale(0);
-            transition: transform 1000ms;
-        }
 
         .check_logo {
             display: flex;
@@ -47,6 +37,7 @@
             width: 25px;
             visibility: visible;
         }
+
     }
 
         .check_logo {
@@ -61,7 +52,7 @@
             border: solid 1px red;
             display: flex;
             justify-content: space-between;
-            min-width: 85%;
+            width: 100%;
         }
 
         .check_text {
