@@ -4,8 +4,8 @@
 .lignePresentation {
     display: flex;
     width: 100%;
-    min-height: 2px;
-    background-color: red
+    min-height: 5px;
+    background: linear-gradient(180deg, rgb(182, 177, 177),$colorGrisClaire );
 }
 
 .presentation {
