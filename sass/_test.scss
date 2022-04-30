@@ -1,71 +1,131 @@
 
-.marginboddy {
-    margin: 20px;
-    background-color: $colorGrisClaire;
+.body_test {
+    height: 100%;
+    width: 100%;
+    background-color: white;
 }
 
-.check {
+// La carte 
 
-    background-color: white;
-    border-radius: 7px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border: solid 1px blue;
+.carte {
+    max-width: 100%;
+    height: 100%;
+    background-color: $colorGrisClaire;
+    padding: 20px;
+    border-radius: 25px 25px 0 0;
     
-    &:hover {
+    // Nom du restaurant de la carte
 
-        cursor: pointer;
-
-        .check_btn {
-            $width: 4rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: $colorTertiaire;
+    .carte_title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        .title_name {
+            font-family: $policeTitreLogo;
+            font-size: 25px;
+            margin-bottom: 15px;
+            margin-top: 0px;
         }
 
-
-        .check_logo {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: $colorTertiaire;
-            background-color: $colorBlanc;
-            border-radius: 50%;
-            height: 25px;
-            width: 25px;
-            visibility: visible;
+        .love_heart{
+            margin-bottom: 15px;
         }
-
     }
 
-        .check_logo {
-            visibility: hidden;
-        }
+    // La carte du restaurant
 
-        p {
-            margin: 0px;
-        }
+    .carte_plats {
+        display: flex;
+        justify-content: space-between;
+        background-color: $colorBlanc;
+        box-shadow: 2px 2px 5px rgb(149, 145, 145);
+        border-radius: 10px;
+        position: relative;
 
-        .check_description {
-            border: solid 1px red;
+        .plats_description {
             display: flex;
             justify-content: space-between;
+            align-items: center;
+            padding: 7px;
             width: 100%;
+
+            .description {
+
+                .description_name {
+                    font-family: $policeTexte;
+                    font-weight: 500;
+                    font-size: 18px;
+                    color: black;
+                    margin: 0px;
+                }
+               
+                .description_infos {
+                    font-family: $policeTexte;
+                    font-weight: 200;
+                    font-size: 15px;
+                    color: black;
+                    margin: 0px;
+                    height: 18px;
+                }
+            }
+
+
+            .plats_prix {
+                align-self: flex-end;
+                font-family: $policeTexte;
+                font-weight: 500;
+                font-size: 15px;
+                margin: 0px;
+                color: black;
+            }
         }
 
-        .check_text {
-            border: solid 1px red;
+        .plats_validation {
+            background-color: $colorTertiaire;
+            width: 0%;
+            border-radius: 0 10px 10px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            visibility: hidden;
+
+            .validation_check{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 18px;
+                color: $colorTertiaire;
+                background-color: $colorBlanc;
+                height: 25px;
+                width: 25px;
+                border-radius: 50%;
+            }
         }
-    
-        .check_prix {
-            border: solid 1px red;
-            align-self: flex-end;
+
+        &:hover {
+
+            cursor: pointer;
+
+            .plats_description{
+                width: 85%;
+            }
+
+            .plats_validation {
+                width: 15%;
+                visibility: visible;
+                transform: scale(1);
+                transition: all 450ms;
+            }
+
+            .validation_check {
+                transform: rotate(360deg);
+                transition: all 550ms;
+            }
+            
         }
-
-        
-
-
+    }
 }
+
+
 
