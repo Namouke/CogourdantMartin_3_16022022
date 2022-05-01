@@ -32,13 +32,17 @@
   box-shadow: 2px 2px 5px rgb(149, 145, 145);
   border-radius: 10px;
   position: relative;
+  margin-bottom: 20px;
 }
 .carte .carte_plats .plats_description {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 7px;
+  padding: 7px 7px 7px 7px;
   width: 100%;
+}
+.carte .carte_plats .plats_description .description {
+  min-width: 85%;
 }
 .carte .carte_plats .plats_description .description .description_name {
   font-family: "Roboto", sans-serif;
@@ -46,6 +50,10 @@
   font-size: 18px;
   color: black;
   margin: 0px;
+  max-height: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip ellipsis;
 }
 .carte .carte_plats .plats_description .description .description_infos {
   font-family: "Roboto", sans-serif;
@@ -53,15 +61,24 @@
   font-size: 15px;
   color: black;
   margin: 0px;
-  height: 18px;
+  max-height: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip ellipsis;
 }
 .carte .carte_plats .plats_description .plats_prix {
+  min-width: 15%;
   align-self: flex-end;
+}
+.carte .carte_plats .plats_description .plats_prix .prix_note {
+  display: flex;
+  justify-content: center;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 15px;
   margin: 0px;
   color: black;
+  padding-right: 7px;
 }
 .carte .carte_plats .plats_validation {
   background-color: #99E2D0;
@@ -87,10 +104,11 @@
   cursor: pointer;
 }
 .carte .carte_plats:hover .plats_description {
-  width: 85%;
+  width: 80%;
+  padding: 7px 0 7px 7px;
 }
 .carte .carte_plats:hover .plats_validation {
-  width: 15%;
+  width: 20%;
   visibility: visible;
   transform: scale(1);
   transition: all 450ms;
@@ -98,6 +116,9 @@
 .carte .carte_plats:hover .validation_check {
   transform: rotate(360deg);
   transition: all 550ms;
+}
+.carte .carte_plats:hover .plats_prix .prix_note {
+  padding-right: 0px;
 }
 
 .header {
