@@ -1,6 +1,9 @@
 
 .bodyContact {
     font-family: $policeTexte;
+    display: flex;
+    justify-content: center;
+    background-color: $colorTertiaire;
 }
 
 .colorBackWebSite {
