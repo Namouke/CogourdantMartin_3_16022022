@@ -1,0 +1,41 @@
+
+.loading_spinner{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $colorGrisClaire;
+    height: 100vh;
+    inset: 0;
+    z-index: 2;
+    opacity: 0.9;
+
+    p {
+        font-family: $policeTitreLogo;
+        font-size: 40px;
+        margin: 0px;
+        width: 315px;
+        height: 58px;
+        opacity: 1;
+    }
+
+    .balls_1, .balls_2, .balls_3 {
+        height: 29px;
+        width: 29px;
+        opacity: 1;
+        border-radius: 50%;
+        margin: 0 10px;
+    }
+
+    .balls_1 {
+        background-color: $colorPrimaire;
+    }
+
+    .balls_2 {
+        background-color: $colorSecondaire;
+    }
+
+    .balls_3 {
+        background-color: $colorTertiaire;
+    }
+}
