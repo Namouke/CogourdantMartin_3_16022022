@@ -25,7 +25,20 @@
 .carte .carte_title .love_heart {
   margin-bottom: 15px;
 }
-.carte .carte_plats {
+.carte .animation_cartes_delay_1 {
+  transition-delay: 400ms;
+}
+.carte .animation_cartes_delay_2 {
+  transition-delay: 800ms;
+}
+.carte .animation_cartes_delay_3 {
+  transition-delay: 1200ms;
+}
+.carte .carte_container {
+  display: flex;
+  flex-direction: column;
+}
+.carte .carte_container .carte_plats {
   display: flex;
   justify-content: space-between;
   background-color: white;
@@ -34,17 +47,17 @@
   position: relative;
   margin-bottom: 20px;
 }
-.carte .carte_plats .plats_description {
+.carte .carte_container .carte_plats .plats_description {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 7px 7px 7px 7px;
   width: 100%;
 }
-.carte .carte_plats .plats_description .description {
+.carte .carte_container .carte_plats .plats_description .description {
   min-width: 85%;
 }
-.carte .carte_plats .plats_description .description .description_name {
+.carte .carte_container .carte_plats .plats_description .description .description_name {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 18px;
@@ -55,7 +68,7 @@
   overflow: hidden;
   text-overflow: clip ellipsis;
 }
-.carte .carte_plats .plats_description .description .description_infos {
+.carte .carte_container .carte_plats .plats_description .description .description_infos {
   font-family: "Roboto", sans-serif;
   font-weight: 200;
   font-size: 15px;
@@ -66,11 +79,11 @@
   overflow: hidden;
   text-overflow: clip ellipsis;
 }
-.carte .carte_plats .plats_description .plats_prix {
+.carte .carte_container .carte_plats .plats_description .plats_prix {
   min-width: 15%;
   align-self: flex-end;
 }
-.carte .carte_plats .plats_description .plats_prix .prix_note {
+.carte .carte_container .carte_plats .plats_description .plats_prix .prix_note {
   display: flex;
   justify-content: center;
   font-family: "Roboto", sans-serif;
@@ -80,7 +93,7 @@
   color: black;
   padding-right: 7px;
 }
-.carte .carte_plats .plats_validation {
+.carte .carte_container .carte_plats .plats_validation {
   background-color: #99E2D0;
   width: 0%;
   border-radius: 0 10px 10px 0;
@@ -89,7 +102,7 @@
   align-items: center;
   visibility: hidden;
 }
-.carte .carte_plats .plats_validation .validation_check {
+.carte .carte_container .carte_plats .plats_validation .validation_check {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -100,24 +113,24 @@
   width: 25px;
   border-radius: 50%;
 }
-.carte .carte_plats:hover {
+.carte .carte_container .carte_plats:hover {
   cursor: pointer;
 }
-.carte .carte_plats:hover .plats_description {
+.carte .carte_container .carte_plats:hover .plats_description {
   width: 80%;
   padding: 7px 0 7px 7px;
 }
-.carte .carte_plats:hover .plats_validation {
+.carte .carte_container .carte_plats:hover .plats_validation {
   width: 20%;
   visibility: visible;
   transform: scale(1);
   transition: all 450ms;
 }
-.carte .carte_plats:hover .validation_check {
+.carte .carte_container .carte_plats:hover .validation_check {
   transform: rotate(360deg);
   transition: all 550ms;
 }
-.carte .carte_plats:hover .plats_prix .prix_note {
+.carte .carte_container .carte_plats:hover .plats_prix .prix_note {
   padding-right: 0px;
 }
 
