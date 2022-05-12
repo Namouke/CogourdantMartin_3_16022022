@@ -11,46 +11,16 @@
     height: 100%;
     background-color: $colorGrisClaire;
     padding: 20px;
-    border-radius: 25px 25px 0 0;
-
-    // Nom du restaurant de la carte
-
-    .carte_title {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        .title_name {
-            font-family: $policeTitreLogo;
-            font-size: 25px;
-            margin-bottom: 15px;
-            margin-top: 0px;
-        }
-
-        .love_heart {
-            margin-bottom: 15px;
-        }
-    }
 
     // La carte du restaurant
-
-    .animation_cartes_delay_1{
-        transition-delay: 400ms;
-    }
-
-    .animation_cartes_delay_2{
-        transition-delay: 800ms;
-    }
-
-    .animation_cartes_delay_3{
-        transition-delay: 1200ms;
-    }
 
 
     .carte_container {
 
         display: flex;
         flex-direction: column;
+
+        
 
         .carte_plats {
             display: flex;
@@ -60,6 +30,26 @@
             border-radius: 10px;
             position: relative;
             margin-bottom: 20px;
+            animation: apparition 1s;
+            animation-fill-mode: both;
+            @keyframes apparition {
+                0%{
+                    transform: translateY(70%);
+                    opacity: 0;
+                }
+                100% {
+                    transform: translateY(1);
+                    opacity: 1;
+                }
+                
+            }
+
+            @for $i from 1 through 3 {
+                &:nth-child(#{$i}) {
+                    animation-delay: 100ms * $i;
+                }
+            }
+
 
             .plats_description {
                 display: flex;
