@@ -51,10 +51,12 @@
 
     .heart_one {
         position: absolute;
+        cursor: pointer;
     }
 
     .heart_two {
         visibility: hidden;
+        cursor: pointer;
     }
 
     &:hover {
