@@ -1,136 +1,3 @@
-.body_test {
-  height: 100%;
-  width: 100%;
-  background-color: white;
-}
-
-.carte {
-  max-width: 100%;
-  height: 100%;
-  background-color: #dddfdc;
-  padding: 20px;
-}
-.carte .carte_container {
-  display: flex;
-  flex-direction: column;
-}
-.carte .carte_container .carte_plats {
-  display: flex;
-  justify-content: space-between;
-  background-color: white;
-  box-shadow: 2px 2px 5px rgb(149, 145, 145);
-  border-radius: 10px;
-  position: relative;
-  margin-bottom: 20px;
-  animation: apparition 1s;
-  animation-fill-mode: both;
-}
-@keyframes apparition {
-  0% {
-    transform: translateY(70%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(1);
-    opacity: 1;
-  }
-}
-.carte .carte_container .carte_plats:nth-child(1) {
-  animation-delay: 100ms;
-}
-.carte .carte_container .carte_plats:nth-child(2) {
-  animation-delay: 200ms;
-}
-.carte .carte_container .carte_plats:nth-child(3) {
-  animation-delay: 300ms;
-}
-.carte .carte_container .carte_plats .plats_description {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 7px 7px 7px 7px;
-  width: 100%;
-}
-.carte .carte_container .carte_plats .plats_description .description {
-  min-width: 85%;
-}
-.carte .carte_container .carte_plats .plats_description .description .description_name {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 18px;
-  color: black;
-  margin: 0px;
-  max-height: 20px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: clip ellipsis;
-}
-.carte .carte_container .carte_plats .plats_description .description .description_infos {
-  font-family: "Roboto", sans-serif;
-  font-weight: 200;
-  font-size: 15px;
-  color: black;
-  margin: 0px;
-  max-height: 20px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: clip ellipsis;
-}
-.carte .carte_container .carte_plats .plats_description .plats_prix {
-  min-width: 15%;
-  align-self: flex-end;
-}
-.carte .carte_container .carte_plats .plats_description .plats_prix .prix_note {
-  display: flex;
-  justify-content: center;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 15px;
-  margin: 0px;
-  color: black;
-  padding-right: 7px;
-}
-.carte .carte_container .carte_plats .plats_validation {
-  background-color: #99E2D0;
-  width: 0%;
-  border-radius: 0 10px 10px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  visibility: hidden;
-}
-.carte .carte_container .carte_plats .plats_validation .validation_check {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 18px;
-  color: #99E2D0;
-  background-color: white;
-  height: 25px;
-  width: 25px;
-  border-radius: 50%;
-}
-.carte .carte_container .carte_plats:hover {
-  cursor: pointer;
-}
-.carte .carte_container .carte_plats:hover .plats_description {
-  width: 80%;
-  padding: 7px 0 7px 7px;
-}
-.carte .carte_container .carte_plats:hover .plats_validation {
-  width: 20%;
-  visibility: visible;
-  transform: scale(1);
-  transition: all 450ms;
-}
-.carte .carte_container .carte_plats:hover .validation_check {
-  transform: rotate(360deg);
-  transition: all 550ms;
-}
-.carte .carte_container .carte_plats:hover .plats_prix .prix_note {
-  padding-right: 0px;
-}
-
 .loading_spinner {
   position: fixed;
   display: flex;
@@ -211,13 +78,49 @@
 .header {
   position: relative;
 }
+@media all and (min-width: 480px) and (max-width: 720px) {
+  .header {
+    padding: 0px 10%;
+  }
+}
+@media all and (min-width: 721px) and (max-width: 1080px) {
+  .header {
+    padding: 0px 15%;
+  }
+}
+@media all and (min-width: 1081px) and (max-width: 1920px) {
+  .header {
+    padding: 0px 20%;
+  }
+}
 
 .iconArrowHeader {
   position: absolute;
   text-decoration: none;
   color: rgb(61, 58, 58);
   font-size: 25px;
-  left: 10px;
+  left: 5%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+@media all and (min-width: 480px) and (max-width: 720px) {
+  .iconArrowHeader {
+    font-size: 30px;
+    left: 10%;
+  }
+}
+@media all and (min-width: 721px) and (max-width: 1080px) {
+  .iconArrowHeader {
+    font-size: 35px;
+    left: 15%;
+  }
+}
+@media all and (min-width: 1081px) and (max-width: 1920px) {
+  .iconArrowHeader {
+    font-size: 40px;
+    left: 20%;
+  }
 }
 
 .logoHeader {
@@ -255,21 +158,87 @@
   font-size: 24px;
   position: absolute;
   bottom: 0px;
-  width: 100%;
+  min-width: 100%;
   height: 60px;
   border-radius: 25px 25px 0 0;
+}
+@media all and (min-width: 480px) and (max-width: 720px) {
+  .titleMenuSmall {
+    padding-top: 15px;
+    padding-bottom: 5px;
+    font-size: 29px;
+  }
+}
+@media all and (min-width: 721px) and (max-width: 1080px) {
+  .titleMenuSmall {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 34px;
+  }
+}
+@media all and (min-width: 1081px) and (max-width: 1920px) {
+  .titleMenuSmall {
+    padding-top: 25px;
+    padding-bottom: 15px;
+    font-size: 39px;
+  }
 }
 
 .padding-left20 {
   padding-left: 10px;
 }
+@media all and (min-width: 480px) and (max-width: 720px) {
+  .padding-left20 {
+    padding: 0px 10%;
+  }
+}
+@media all and (min-width: 721px) and (max-width: 1080px) {
+  .padding-left20 {
+    padding: 0px 15%;
+  }
+}
+@media all and (min-width: 1081px) and (max-width: 1920px) {
+  .padding-left20 {
+    padding: 0px 20%;
+  }
+}
 
 .padding-right30 {
   padding-right: 20px;
 }
+@media all and (min-width: 480px) and (max-width: 720px) {
+  .padding-right30 {
+    padding-right: 10%;
+  }
+}
+@media all and (min-width: 721px) and (max-width: 1080px) {
+  .padding-right30 {
+    padding-right: 15%;
+  }
+}
+@media all and (min-width: 1081px) and (max-width: 1920px) {
+  .padding-right30 {
+    padding-right: 20%;
+  }
+}
 
 .menuCarte {
   background-color: #dddfdc;
+}
+@media all and (min-width: 480px) and (max-width: 720px) {
+  .menuCarte {
+    padding: 0px 10%;
+  }
+}
+@media all and (min-width: 721px) and (max-width: 1080px) {
+  .menuCarte {
+    padding: 0px 15%;
+  }
+}
+@media all and (min-width: 1081px) and (max-width: 1920px) {
+  .menuCarte {
+    padding: 0px 20%;
+  }
 }
 .menuCarte .menuCarteTitle {
   padding: 0 10px 0 10px;
@@ -345,6 +314,24 @@
   overflow: hidden;
   text-overflow: clip ellipsis;
 }
+@media all and (min-width: 480px) and (max-width: 720px) {
+  .menuCarte .carte .carte_container .carte_plats .plats_description .description .description_name {
+    font-size: 20px;
+    max-height: 25px;
+  }
+}
+@media all and (min-width: 721px) and (max-width: 1080px) {
+  .menuCarte .carte .carte_container .carte_plats .plats_description .description .description_name {
+    font-size: 24px;
+    max-height: 30px;
+  }
+}
+@media all and (min-width: 1081px) and (max-width: 1920px) {
+  .menuCarte .carte .carte_container .carte_plats .plats_description .description .description_name {
+    font-size: 26px;
+    max-height: 35px;
+  }
+}
 .menuCarte .carte .carte_container .carte_plats .plats_description .description .description_infos {
   font-family: "Roboto", sans-serif;
   font-weight: 200;
@@ -355,6 +342,24 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: clip ellipsis;
+}
+@media all and (min-width: 480px) and (max-width: 720px) {
+  .menuCarte .carte .carte_container .carte_plats .plats_description .description .description_infos {
+    font-size: 17px;
+    max-height: 25px;
+  }
+}
+@media all and (min-width: 721px) and (max-width: 1080px) {
+  .menuCarte .carte .carte_container .carte_plats .plats_description .description .description_infos {
+    font-size: 19px;
+    max-height: 30px;
+  }
+}
+@media all and (min-width: 1081px) and (max-width: 1920px) {
+  .menuCarte .carte .carte_container .carte_plats .plats_description .description .description_infos {
+    font-size: 21px;
+    max-height: 35px;
+  }
 }
 .menuCarte .carte .carte_container .carte_plats .plats_description .plats_prix {
   min-width: 15%;
@@ -369,6 +374,24 @@
   margin: 0px;
   color: black;
   padding-right: 7px;
+}
+@media all and (min-width: 480px) and (max-width: 720px) {
+  .menuCarte .carte .carte_container .carte_plats .plats_description .plats_prix .prix_note {
+    font-size: 17px;
+    max-height: 25px;
+  }
+}
+@media all and (min-width: 721px) and (max-width: 1080px) {
+  .menuCarte .carte .carte_container .carte_plats .plats_description .plats_prix .prix_note {
+    font-size: 19px;
+    max-height: 30px;
+  }
+}
+@media all and (min-width: 1081px) and (max-width: 1920px) {
+  .menuCarte .carte .carte_container .carte_plats .plats_description .plats_prix .prix_note {
+    font-size: 21px;
+    max-height: 35px;
+  }
 }
 .menuCarte .carte .carte_container .carte_plats .plats_validation {
   background-color: #99E2D0;
@@ -423,7 +446,7 @@
 .btn-oder-top .btn-oderMenu {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 18px;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   color: white;
   padding: 10px 20px;
@@ -435,6 +458,21 @@
 .btn-oder-top .btn-oderMenu:hover {
   background: linear-gradient(to bottom right, #9356DC, #FF79DA);
   box-shadow: 2px 2px 10px black;
+}
+@media all and (min-width: 480px) and (max-width: 720px) {
+  .btn-oder-top .btn-oderMenu {
+    font-size: 20px;
+  }
+}
+@media all and (min-width: 721px) and (max-width: 1080px) {
+  .btn-oder-top .btn-oderMenu {
+    font-size: 22px;
+  }
+}
+@media all and (min-width: 1081px) and (max-width: 1920px) {
+  .btn-oder-top .btn-oderMenu {
+    font-size: 24px;
+  }
 }
 
 .lignePresentation {
@@ -500,7 +538,7 @@
 .btn-presentation {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 18px;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   color: white;
   padding: 10px 20px;
@@ -513,15 +551,43 @@
   background: linear-gradient(to bottom right, #9356DC, #FF79DA);
   box-shadow: 2px 2px 10px black;
 }
+@media all and (min-width: 480px) and (max-width: 720px) {
+  .btn-presentation {
+    font-size: 20px;
+  }
+}
+@media all and (min-width: 721px) and (max-width: 1080px) {
+  .btn-presentation {
+    font-size: 22px;
+  }
+}
+@media all and (min-width: 1081px) and (max-width: 1920px) {
+  .btn-presentation {
+    font-size: 24px;
+  }
+}
 
 .fonctionnement {
   margin: 15px;
+}
+@media all and (min-width: 480px) and (max-width: 1920px) {
+  .fonctionnement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .titreFonctionnement {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 23px;
+}
+@media all and (min-width: 480px) and (max-width: 1920px) {
+  .titreFonctionnement {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .fonctionnementMenu {
@@ -540,6 +606,18 @@
   position: relative;
   margin: 12px;
 }
+@media all and (min-width: 480px) and (max-width: 900px) {
+  .fonctionnementMenu {
+    width: 80%;
+    font-size: 18px;
+  }
+}
+@media all and (min-width: 901px) and (max-width: 1920px) {
+  .fonctionnementMenu {
+    width: 60%;
+    font-size: 22px;
+  }
+}
 
 .nurmerotationFonctionnement {
   display: flex;
@@ -553,22 +631,82 @@
   position: absolute;
   left: -12px;
 }
+@media all and (min-width: 480px) and (max-width: 900px) {
+  .nurmerotationFonctionnement {
+    height: 30px;
+    width: 30px;
+  }
+}
+@media all and (min-width: 901px) and (max-width: 1920px) {
+  .nurmerotationFonctionnement {
+    height: 35px;
+    width: 35px;
+  }
+}
 
 .logoFonctionnement {
   color: #373438;
   position: absolute;
   left: 30px;
 }
+@media all and (min-width: 480px) and (max-width: 900px) {
+  .logoFonctionnement {
+    left: 15%;
+    font-size: 25px;
+  }
+}
+@media all and (min-width: 901px) and (max-width: 1920px) {
+  .logoFonctionnement {
+    left: 20%;
+    font-size: 25px;
+  }
+}
 
 .restaurants {
   background-color: #dddfdc;
   padding: 15px;
+}
+@media all and (min-width: 480px) and (max-width: 720px) {
+  .restaurants {
+    padding: 15px 10%;
+  }
+}
+@media all and (min-width: 721px) and (max-width: 1080px) {
+  .restaurants {
+    padding: 15px 15%;
+  }
+}
+@media all and (min-width: 1081px) and (max-width: 1920px) {
+  .restaurants {
+    padding: 15px 20%;
+  }
 }
 
 .titreRestaurants {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 20px;
+}
+@media all and (min-width: 480px) and (max-width: 720px) {
+  .titreRestaurants {
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+  }
+}
+@media all and (min-width: 721px) and (max-width: 1080px) {
+  .titreRestaurants {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+  }
+}
+@media all and (min-width: 1081px) and (max-width: 1920px) {
+  .titreRestaurants {
+    display: flex;
+    justify-content: center;
+    font-size: 26px;
+  }
 }
 
 .objectifFit {
@@ -612,6 +750,27 @@
   height: 30px;
   width: 30px;
 }
+@media all and (min-width: 480px) and (max-width: 720px) {
+  .love_heart {
+    font-size: 30px;
+    height: 35px;
+    width: 35px;
+  }
+}
+@media all and (min-width: 721px) and (max-width: 1080px) {
+  .love_heart {
+    font-size: 35px;
+    height: 40px;
+    width: 40px;
+  }
+}
+@media all and (min-width: 1081px) and (max-width: 1920px) {
+  .love_heart {
+    font-size: 40px;
+    height: 45px;
+    width: 45px;
+  }
+}
 .love_heart .heart_one {
   position: absolute;
   cursor: pointer;
@@ -645,13 +804,48 @@
   color: rgb(49, 97, 49);
   border-radius: 3px;
   position: absolute;
-  left: 200px;
-  top: 15px;
+  left: 70%;
+  top: 7%;
+}
+@media all and (min-width: 420px) and (max-width: 520px) {
+  .enca-nouveau {
+    left: 75%;
+  }
+}
+@media all and (min-width: 521px) and (max-width: 721px) {
+  .enca-nouveau {
+    left: 80%;
+  }
+}
+@media all and (min-width: 722px) and (max-width: 992px) {
+  .enca-nouveau {
+    left: 80%;
+  }
+}
+@media all and (min-width: 993px) and (max-width: 1920px) {
+  .enca-nouveau {
+    left: 90%;
+  }
 }
 
 .footer {
   background-color: #373438;
   padding: 20px;
+}
+@media all and (min-width: 480px) and (max-width: 720px) {
+  .footer {
+    padding: 20px 10%;
+  }
+}
+@media all and (min-width: 721px) and (max-width: 1080px) {
+  .footer {
+    padding: 20px 15%;
+  }
+}
+@media all and (min-width: 1081px) and (max-width: 1920px) {
+  .footer {
+    padding: 20px 20%;
+  }
 }
 
 .colorContactNone {
@@ -736,6 +930,7 @@
 
 html, body {
   margin: auto;
+  min-width: 320px;
 }
 
 .policeGras700 {

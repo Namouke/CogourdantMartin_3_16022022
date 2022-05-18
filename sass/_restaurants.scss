@@ -1,15 +1,43 @@
-
 .restaurants {
     background-color: $colorGrisClaire;
     padding: 15px;
+
+    @media all and (min-width:480px) and (max-width:720px) {
+        padding: 15px 10%;
+    }
+
+    @media all and (min-width:721px) and (max-width:1080px) {
+        padding: 15px 15%;
+    }
+
+    @media all and (min-width:1081px) and (max-width:1920px) {
+        padding: 15px 20%;
+    }
 }
 
 .titreRestaurants {
     font-family: $policeTexte;
     font-weight: 700;
     font-size: 20px;
+
+    @media all and (min-width:480px) and (max-width:720px) {
+        display: flex;
+        justify-content: center;
+        font-size: 22px;
+    }
+    @media all and (min-width:721px) and (max-width:1080px) {
+        display: flex;
+        justify-content: center;
+        font-size: 24px;
+    }
+    @media all and (min-width:1081px) and (max-width:1920px) {
+        display: flex;
+        justify-content: center;
+        font-size: 26px;
+    }
 }
-.objectifFit{
+
+.objectifFit {
     @include objectif-fit;
     border-radius: 25px 25px 0px 0px;
 }
@@ -19,7 +47,7 @@
     color: black;
 }
 
-.vignetteResto{
+.vignetteResto {
     display: flex;
     width: 100%;
     max-height: 250px;
@@ -39,7 +67,7 @@
     margin: 10px;
 }
 
-.love_heart{
+.love_heart {
 
     font-size: 25px;
     display: flex;
@@ -48,6 +76,23 @@
     position: relative;
     height: 30px;
     width: 30px;
+
+    @media all and (min-width:480px) and (max-width:720px) {
+        font-size: 30px;
+        height: 35px;
+        width: 35px;
+    }
+    @media all and (min-width:721px) and (max-width:1080px) {
+        font-size: 35px;
+        height: 40px;
+        width: 40px;
+    }
+    @media all and (min-width:1081px) and (max-width:1920px) {
+        font-size: 40px;
+        height: 45px;
+        width: 45px;
+    }
+
 
     .heart_one {
         position: absolute;
@@ -60,10 +105,11 @@
     }
 
     &:hover {
-    
+
         .heart_one {
             visibility: hidden;
         }
+
         .heart_two {
             visibility: initial;
             color: $colorPrimaire;
@@ -91,6 +137,22 @@
     color: rgb(49, 97, 49);
     border-radius: 3px;
     position: absolute;
-    left: 200px;
-    top: 15px;
+    left: 70%;
+    top: 7%;
+
+    @media all and (min-width: 420px) and (max-width: 520px) {
+        left: 75%;
+    }
+
+    @media all and (min-width: 521px) and (max-width: 721px) {
+        left: 80%;
+    }
+
+    @media all and (min-width: 722px) and (max-width: 992px) {
+        left: 80%;
+    }
+
+    @media all and (min-width:993px) and (max-width:1920px) {
+        left: 90%;
+    }
 }

@@ -1,6 +1,7 @@
 .menuCarte {
 
     background-color: $colorGrisClaire;
+    @include responsive_menu_card;
 
     .menuCarteTitle {
         padding: 0 10px 0 10px;
@@ -81,6 +82,7 @@
                             white-space: nowrap;
                             overflow: hidden;
                             text-overflow: clip ellipsis;
+                            @include augment_police_size_for_18
                         }
     
                         .description_infos {
@@ -93,6 +95,7 @@
                             white-space: nowrap;
                             overflow: hidden;
                             text-overflow: clip ellipsis;
+                            @include augment_police_size_for_15
                         }
                     }
     
@@ -110,6 +113,7 @@
                             margin: 0px;
                             color: black;
                             padding-right: 7px;
+                            @include augment_police_size_for_15
                         }
     
                     }
