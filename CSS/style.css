@@ -873,61 +873,6 @@
   align-items: baseline;
 }
 
-.bodyContact {
-  font-family: "Roboto", sans-serif;
-  display: flex;
-  justify-content: center;
-  background-color: #99E2D0;
-}
-
-.colorBackWebSite {
-  text-decoration: none;
-  color: #9356DC;
-}
-
-.sectionContact {
-  height: 100vh;
-  max-width: 320px;
-  background-color: #99E2D0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.contenerContact {
-  width: 90%;
-  max-width: 300px;
-  margin: 0 auto;
-  padding: 20px;
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.062745098);
-  background-color: white;
-  border-radius: 8px;
-  margin-bottom: 20px;
-}
-
-.form-group {
-  width: 100%;
-  margin-top: 20px;
-  font-size: 20px;
-}
-
-.form-group input,
-.form-group textarea {
-  width: -moz-available;
-  padding: 10px;
-  font-size: 18px;
-  padding: 5px;
-  border: 1px solid #9356DC;
-}
-
-.logoContact {
-  font-family: "Shrikhand", cursive;
-  font-size: 35px;
-  display: flex;
-  align-content: center;
-  justify-content: center;
-}
-
 html, body {
   margin: auto;
   min-width: 320px;
