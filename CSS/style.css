@@ -141,6 +141,21 @@
   height: 300px;
   position: relative;
 }
+@media all and (min-width: 480px) and (max-width: 720px) {
+  .titleMenu {
+    height: 350px;
+  }
+}
+@media all and (min-width: 721px) and (max-width: 1080px) {
+  .titleMenu {
+    height: 375px;
+  }
+}
+@media all and (min-width: 1081px) and (max-width: 1920px) {
+  .titleMenu {
+    height: 400px;
+  }
+}
 
 .imageMenu {
   width: 100%;
