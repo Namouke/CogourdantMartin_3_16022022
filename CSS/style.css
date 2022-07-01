@@ -132,13 +132,13 @@
 }
 
 .tailleLogo {
-  max-width: -moz-available;
+  max-width: 100%;
 }
 
 .titleMenu {
   margin-top: 20px;
   max-width: 100%;
-  height: 300px;
+  height: 250px;
   position: relative;
 }
 @media all and (min-width: 480px) and (max-width: 720px) {
@@ -168,7 +168,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #dddfdc;
+  background-color: #f6f6f6;
   font-family: "Shrikhand", cursive;
   font-size: 24px;
   position: absolute;
@@ -238,7 +238,7 @@
 }
 
 .menuCarte {
-  background-color: #dddfdc;
+  background-color: #f6f6f6;
 }
 @media all and (min-width: 480px) and (max-width: 720px) {
   .menuCarte {
@@ -268,7 +268,7 @@
 .menuCarte .carte {
   max-width: 100%;
   height: 100%;
-  background-color: #dddfdc;
+  background-color: #f6f6f6;
   padding: 10px;
 }
 .menuCarte .carte .carte_container {
@@ -726,7 +726,7 @@
 
 .objectifFit {
   width: 100%;
-  height: 100%;
+  height: 150px;
   object-fit: cover;
   border-radius: 25px 25px 0px 0px;
 }
@@ -753,7 +753,8 @@
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  margin: 10px;
+  margin: 15px;
+  align-items: center;
 }
 
 .love_heart {
@@ -821,6 +822,7 @@
   position: absolute;
   left: 70%;
   top: 7%;
+  padding: 0px 5px 0px 5px;
 }
 @media all and (min-width: 420px) and (max-width: 520px) {
   .enca-nouveau {
@@ -829,7 +831,7 @@
 }
 @media all and (min-width: 521px) and (max-width: 721px) {
   .enca-nouveau {
-    left: 80%;
+    left: 75%;
   }
 }
 @media all and (min-width: 722px) and (max-width: 992px) {
@@ -839,7 +841,7 @@
 }
 @media all and (min-width: 993px) and (max-width: 1920px) {
   .enca-nouveau {
-    left: 90%;
+    left: 85%;
   }
 }
 

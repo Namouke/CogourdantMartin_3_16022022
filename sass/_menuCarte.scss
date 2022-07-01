@@ -1,6 +1,6 @@
 .menuCarte {
 
-    background-color: $colorGrisClaire;
+    background-color: $colorGrisTransparant;
     @include responsive_menu_card;
 
     .menuCarteTitle {
@@ -19,7 +19,7 @@
         
         max-width: 100%;
         height: 100%;
-        background-color: $colorGrisClaire;
+        background-color: $colorGrisTransparant;
         padding: 10px;
     
         // La carte du restaurant
