@@ -48,7 +48,7 @@
                         opacity: 0;
                     }
                     100% {
-                        transform: translateY(1);
+                        transform: translateY(10%);
                         opacity: 1;
                     }
                     
@@ -81,7 +81,7 @@
                             max-height: 20px;
                             white-space: nowrap;
                             overflow: hidden;
-                            text-overflow: clip ellipsis;
+                            text-overflow: ellipsis;
                             @include augment_police_size_for_18
                         }
     
@@ -94,7 +94,7 @@
                             max-height: 20px;
                             white-space: nowrap;
                             overflow: hidden;
-                            text-overflow: clip ellipsis;
+                            text-overflow: ellipsis;
                             @include augment_police_size_for_15
                         }
                     }

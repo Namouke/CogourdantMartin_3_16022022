@@ -292,7 +292,7 @@
     opacity: 0;
   }
   100% {
-    transform: translateY(1);
+    transform: translateY(10%);
     opacity: 1;
   }
 }
@@ -327,7 +327,7 @@
   max-height: 20px;
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: clip ellipsis;
+  text-overflow: ellipsis;
 }
 @media all and (min-width: 480px) and (max-width: 720px) {
   .menuCarte .carte .carte_container .carte_plats .plats_description .description .description_name {
@@ -356,7 +356,7 @@
   max-height: 20px;
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: clip ellipsis;
+  text-overflow: ellipsis;
 }
 @media all and (min-width: 480px) and (max-width: 720px) {
   .menuCarte .carte .carte_container .carte_plats .plats_description .description .description_infos {
