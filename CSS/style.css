@@ -1,4 +1,4 @@
-.loading_spinner {
+.loading_screen {
   position: fixed;
   display: flex;
   justify-content: center;
@@ -21,11 +21,11 @@
   }
 }
 @media (max-width: 320px) {
-  .loading_spinner {
+  .loading_screen {
     flex-direction: column;
   }
 }
-.loading_spinner p {
+.loading_screen p {
   font-family: "Shrikhand", cursive;
   font-size: 40px;
   margin: 0px;
@@ -34,18 +34,18 @@
   opacity: 1;
 }
 @media (max-width: 320px) {
-  .loading_spinner p {
+  .loading_screen p {
     font-size: 30px;
     display: flex;
     justify-content: center;
   }
 }
-.loading_spinner .all_balls {
+.loading_screen .all_balls {
   display: flex;
 }
-.loading_spinner .balls_1,
-.loading_spinner .balls_2,
-.loading_spinner .balls_3 {
+.loading_screen .balls_1,
+.loading_screen .balls_2,
+.loading_screen .balls_3 {
   height: 29px;
   width: 29px;
   opacity: 1;
@@ -62,15 +62,15 @@
     transform: scale(0);
   }
 }
-.loading_spinner .balls_1 {
+.loading_screen .balls_1 {
   background-color: #9356DC;
   animation-delay: 0ms;
 }
-.loading_spinner .balls_2 {
+.loading_screen .balls_2 {
   background-color: #FF79DA;
   animation-delay: 200ms;
 }
-.loading_spinner .balls_3 {
+.loading_screen .balls_3 {
   background-color: #99E2D0;
   animation-delay: 400ms;
 }
